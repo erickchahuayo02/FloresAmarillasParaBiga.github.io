@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi gordita</title>
+    <video autoplay muted loop>
+        <source src="img/Video Día de los Enamorados Collage Simple Rojo.mp4" type="video/mp4">
+    </video>
+    <style>
+      /* body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('img/amar.png') no-repeat center center/cover;
+            font-family: 'Arial', sans-serif;
+       }*/
+       body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Evita scroll en la página */
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que el video cubra toda la pantalla */
+    z-index: -1; /* Envía el video al fondo */
+}
+
+        h1, h2 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 8vw;
+            animation: fadeInOut 3s infinite; /* Animación suave */
+        }
+
+        h2 {
+            font-size: 4vw;
+            margin-top: 20px;
+            animation: pulse 2s infinite; /* Pequeño efecto de pulsación */
+        }
+
+        button {
+            font-size: 3vw;
+            padding: 15px 30px;
+            margin-top: 30px;
+            border: none;
+            margin-left: 200px;
+            background-color: #ff3366;
+            color: white;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        div {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    padding: 8px 16px; /* Hace el botón más pequeño */
+    font-size: 14px;   /* Ajusta el tamaño del texto */
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f39c12;
+}
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="window.location.href='rosas.html'">Ver regalo 💛</button>
+    </div>
+    <audio id="background-audio" autoplay loop>
+        <source src="img/WhatsApp Audio 2024-09-21 at 4.05.41 PM.mp3" type="audio/mp3">
+    </audio>
+</body>
+
+
+    
+</html>
